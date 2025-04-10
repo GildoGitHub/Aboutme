@@ -2,11 +2,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JSP - Hello World</title>
+    <meta charset="UTF-8">
+    <title>paginaInicial</title>
 </head>
 <body>
-<h1><%= "Hello World!" %></h1>
-<br/>
+    <div class="principal">
+        <header>
+            <div class="logo">
+
+            </div>
+            <nav>
+
+            </nav>
+        </header>
+        <main>
+            <section class="biografia">
+
+            </section>
+            <section class="academia">
+
+            </section>
+            <section class="interesses">
+
+            </section>
+            <section class="hobbies">
+
+            </section>
+        </main>
+    </div>
 <a href="hello-servlet">Hello Servlet</a>
 </body>
 </html>
