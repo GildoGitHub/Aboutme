@@ -2,20 +2,27 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 /* ESTILIZANDO LOGOTIPO */
 header{
+    padding-top: 0%;
+    margin-top: 0%;
     display: flex;
     gap: 0.9%;
+    position: relative;
 }
 
+
 .principal{
+    background-color: rgb(13, 46, 74);
     width: 99.5%;
     margin: 2px auto ;
-    background-color: rgb(179, 213, 242);
 }
+
 
 /* Estilizando imagens */
 .logo img{
@@ -24,10 +31,27 @@ header{
     padding: 2px;
 }
 
+.seccoes h4{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.seccoes a h4:hover{
+    color: rgb(125, 26, 155);
+}
+
+.seccoes a{
+    padding: 20px;
+    text-decoration: none;
+    color: azure;
+}
 .logo{
     width: 10%;
 }
 
+.biografia{
+    object-fit: cover;
+}
 .links ul{
     display: flex;
     gap: 1%;
@@ -75,8 +99,6 @@ main{
     margin: auto;
     gap: 1%;
     padding-left: 0.4%;
-    background-color: aliceblue;
-    padding-top: 30px;
 }
 
 .seccoes{
@@ -84,15 +106,46 @@ main{
     width: 100%;
     gap: 2.4%;
     display: flex;
-    padding-left: 5.2%;
+    padding-left: 8%;
+    height: 400px;
 }
-section{
+.biografia, .interesses, .academia, .hobbies {
     width: 20%;
     border-radius: 7px;
-    background-color: rgb(185, 185, 186);
+    background-color: rgb(255, 255, 255);
+    background-size: cover;  
+    background-position: center;   
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
 }
 
-section img{
-    width: 100%;
-    border-radius: 7px;
+.biografia:hover, .interesses:hover{
+    transform: translateY(-5px);
+}
+
+.academia:hover, .hobbies:hover{
+    transform: translateY(5px);
+}
+
+.interesses{
+    background-image: url('../IMAGENS/inte4.jpg');
+} 
+
+.academia{
+    background-image: url('../IMAGENS/ac1.jpg');
+}
+
+.biografia{
+    background-image: url('../IMAGENS/sobre4.jpg');
+}
+
+.hobbies{
+    background-image: url('../IMAGENS/hobbies.jpg');
+}
+
+
+.seccoes ul{
+    list-style-type: square;
+    color: rgb(4, 255, 255);
+    font-style: italic;
 }
